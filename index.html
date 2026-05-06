@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Golden Brew | Restaurant & Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">☕ The Golden Brew</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+        <li><a href="#reservation" class="btn btn-nav">Reserve a Table</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content fade-up">
+        <span class="badge">Est. 2018 — Brisbane, QLD</span>
+        <h1>Where Every<br /><em>Sip &amp; Bite</em><br />Tells a Story.</h1>
+        <p>Handcrafted coffee, seasonal menus, and a warm atmosphere that welcomes you like home. Open daily from 7am.</p>
+        <div class="hero-btns">
+          <a href="#reservation" class="btn btn-primary">Visit Us Today</a>
+          <a href="#menu" class="btn btn-ghost">View Menu</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MENU HIGHLIGHTS -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Seasonal Selection</span>
+        <h2>Menu Highlights</h2>
+        <p>Crafted with locally sourced ingredients and a whole lot of love.</p>
+      </div>
+
+      <div class="menu-tabs fade-up">
+        <button class="tab-btn active" data-tab="food">Food</button>
+        <button class="tab-btn" data-tab="coffee">Coffee</button>
+        <button class="tab-btn" data-tab="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-content active" id="tab-food">
+        <div class="menu-grid">
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Eggs Benedict" />
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Eggs Benedict</h4><span>$18</span>
+              </div>
+              <p>Poached eggs, Canadian bacon, hollandaise on toasted brioche. A brunch classic done perfectly.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Wagyu Burger" />
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Wagyu Smash Burger</h4><span>$24</span>
+              </div>
+              <p>Double wagyu smash, aged cheddar, caramelised onions, house aioli on a brioche bun.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Grain Bowl" />
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Harvest Grain Bowl</h4><span>$22</span>
+              </div>
+              <p>Farro, roasted seasonal veg, tahini dressing, pomegranate seeds, and soft-boiled egg.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&q=80" alt="Salmon" />
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Pan-Seared Salmon</h4><span>$32</span>
+              </div>
+              <p>Atlantic salmon, lemon butter sauce, asparagus, capers, and herb crushed potatoes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-content" id="tab-coffee">
+        <div class="menu-grid">
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="Latte" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>Signature Latte</h4><span>$6</span></div>
+              <p>Single-origin Ethiopian espresso, silky steamed milk, subtle floral and citrus notes.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&q=80" alt="Cold Brew" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>Cold Brew Float</h4><span>$8</span></div>
+              <p>24-hour cold brew over ice, topped with vanilla bean ice cream and a drizzle of caramel.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&q=80" alt="Flat White" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>Flat White</h4><span>$5</span></div>
+              <p>Double ristretto, velvety micro-foam. Clean, strong, beautiful. The Australian classic.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&q=80" alt="Matcha" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>Ceremonial Matcha</h4><span>$7</span></div>
+              <p>Japanese ceremonial grade matcha, oat milk, honey. Earthy, smooth, and satisfying.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-content" id="tab-drinks">
+        <div class="menu-grid">
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1622597467836-f3e6707f7b87?w=500&q=80" alt="Smoothie" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>Tropical Smoothie</h4><span>$9</span></div>
+              <p>Mango, pineapple, coconut cream, turmeric, and a squeeze of fresh lime.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&q=80" alt="Lemonade" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>House Lemonade</h4><span>$6</span></div>
+              <p>Fresh-squeezed lemon, elderflower cordial, mint, and sparkling water over crushed ice.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=500&q=80" alt="Wine" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>House Rosé</h4><span>$12</span></div>
+              <p>Locally sourced rosé wine from the Barossa Valley. Crisp, dry, and perfectly chilled.</p>
+            </div>
+          </div>
+          <div class="menu-item fade-up">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80" alt="Chai" />
+            <div class="menu-info">
+              <div class="menu-name-price"><h4>Spiced Chai Latte</h4><span>$6</span></div>
+              <p>House-blended chai spices, steamed oat milk. Warming, aromatic, and utterly comforting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-warm" id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-imgs fade-up">
+          <img class="about-img-main" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=80" alt="Cafe interior" />
+          <img class="about-img-secondary" src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=400&q=80" alt="Coffee art" />
+        </div>
+        <div class="about-content fade-up">
+          <span class="section-tag">Our Story</span>
+          <h2>Born From a<br /><em>Passion for Coffee</em></h2>
+          <p>The Golden Brew started in 2018 as a small corner café with a big dream: to create a space where exceptional food and coffee meet genuine warmth.</p>
+          <p>Today, we're Brisbane's favourite neighbourhood café — but we still do everything the same way we always have. Fresh ingredients. Expert baristas. And a welcome smile every single morning.</p>
+          <div class="about-stats">
+            <div class="a-stat">
+              <strong>7+</strong><span>Years Open</span>
+            </div>
+            <div class="a-stat">
+              <strong>200+</strong><span>Menu Items</span>
+            </div>
+            <div class="a-stat">
+              <strong>4.9★</strong><span>Google Rating</span>
+            </div>
+          </div>
+          <a href="#reservation" class="btn btn-primary">Visit Us Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Instagram Worthy</span>
+        <h2>Our Gallery</h2>
+        <p>Come for the coffee, stay for the ambience.</p>
+      </div>
+      <div class="gallery-grid fade-up">
+        <div class="g-item g-tall">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80" alt="Cafe atmosphere" />
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Coffee" />
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Food" />
+        </div>
+        <div class="g-item g-wide">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80" alt="Cafe interior" />
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1516981879613-9f5da904015f?w=400&q=80" alt="Barista" />
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" alt="Dessert" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section section-warm" id="location">
+    <div class="container">
+      <div class="location-wrap">
+        <div class="location-info fade-up">
+          <span class="section-tag">Find Us</span>
+          <h2>Come Visit Us</h2>
+          <p>Nestled in the heart of New Farm, Brisbane. Easy parking, wheelchair accessible.</p>
+          <div class="loc-details">
+            <div class="loc-row">
+              <span class="loc-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <span>42 Brunswick Street, New Farm QLD 4005</span>
+              </div>
+            </div>
+            <div class="loc-row">
+              <span class="loc-icon">🕐</span>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon–Fri: 7am – 4pm</span>
+                <span>Sat–Sun: 7am – 5pm</span>
+              </div>
+            </div>
+            <div class="loc-row">
+              <span class="loc-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <span>+61 7 3456 7890</span>
+              </div>
+            </div>
+            <div class="loc-row">
+              <span class="loc-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <span>hello@thegoldenbrew.com.au</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-map fade-up">
+          <div class="map-placeholder">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?w=700&q=80" alt="Map area" />
+            <div class="map-pin">📍 The Golden Brew</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="section" id="reservation">
+    <div class="container">
+      <div class="res-wrap">
+        <div class="res-left fade-up">
+          <span class="section-tag">Make a Booking</span>
+          <h2>Reserve Your Table</h2>
+          <p>Book a table online and we'll have everything ready when you arrive. Groups of 8+ please call us directly.</p>
+          <div class="res-perks">
+            <div class="perk">🪑 <span>Indoor &amp; outdoor seating</span></div>
+            <div class="perk">🐶 <span>Dog-friendly courtyard</span></div>
+            <div class="perk">🎂 <span>Special occasion setups</span></div>
+            <div class="perk">🅿️ <span>Free parking available</span></div>
+          </div>
+        </div>
+        <form class="res-form fade-up" id="reservationForm">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" placeholder="Phone Number" />
+            <select>
+              <option value="" disabled selected>Party Size</option>
+              <option>1–2 people</option>
+              <option>3–4 people</option>
+              <option>5–6 people</option>
+              <option>7–8 people</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <input type="date" />
+            <select>
+              <option value="" disabled selected>Preferred Time</option>
+              <option>7:00am</option>
+              <option>8:00am</option>
+              <option>9:00am</option>
+              <option>10:00am</option>
+              <option>11:00am</option>
+              <option>12:00pm</option>
+              <option>1:00pm</option>
+              <option>2:00pm</option>
+              <option>3:00pm</option>
+            </select>
+          </div>
+          <select>
+            <option value="" disabled selected>Occasion (optional)</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Business Meeting</option>
+            <option>Just a visit!</option>
+          </select>
+          <textarea placeholder="Any dietary requirements or special requests?" rows="4"></textarea>
+          <button type="submit" class="btn btn-primary w-full">Confirm Reservation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">☕ The Golden Brew</div>
+          <p>Handcrafted coffee, seasonal food, and warm hospitality in the heart of New Farm, Brisbane.</p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <a href="#">Breakfast</a>
+          <a href="#">Lunch</a>
+          <a href="#">Coffee</a>
+          <a href="#">Drinks</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="#">Location</a>
+          <a href="#">Hours</a>
+          <a href="#">Parking</a>
+          <a href="#">Private Events</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="#">+61 7 3456 7890</a>
+          <a href="#">hello@thegoldenbrew.com.au</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Golden Brew. All rights reserved.</p>
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/61734567890" class="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
